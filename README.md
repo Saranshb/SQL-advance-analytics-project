@@ -44,8 +44,8 @@ The goal of this project is to answer key business questions such as:
 ## 📊 Data Model
 
 The following diagram represents the structure of the data used in this project:
-
 ![Data Model](docs/data_model.png)
+
 
 ### 🔹 Customer Segmentation
 
