@@ -39,7 +39,7 @@ The goal of this project is to answer key business questions such as:
 
 * Combined transactional and customer data into a single dataset
 * Extracted key fields like name, age, and order details
-
+![Data Model](data_model.png)
 ---
 
 ### 🔹 Customer Segmentation
