@@ -43,7 +43,8 @@ The goal of this project is to answer key business questions such as:
 
 ## 📊 Data Model
 
-The following diagram represents the structure of the data used in this project:
+This diagram shows the data model used for the analysis, 
+where a central fact table (sales) is connected to customer and product dimension tables.
 
 ![Data Model](data_model.png)
 
