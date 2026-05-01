@@ -1,138 +1,66 @@
-# SQL-advance-analytics-project
-
-# 📊 Customer Analytics Report using SQL
+# 📊 SQL Data Analytics Project
 
 ## 📖 Overview
+This project focuses on analyzing sales data using SQL to solve key business problems related to customers and products.  
+It transforms raw transactional data into structured insights that support decision-making.
 
-This project focuses on building a comprehensive **customer-level analytics report** using SQL. It consolidates transactional and customer data to generate meaningful insights around customer behavior, segmentation, and performance.
+The project is built on a star schema data model with fact and dimension tables.
 
-The final output is a reusable SQL **view** that can support business decisions in marketing, sales, and customer retention.
-
----
-
-## 🎯 Objective
-
-The goal of this project is to answer key business questions such as:
-
-* Who are the most valuable customers?
-* How are customers distributed across different age groups?
-* Which customers are at risk based on inactivity?
-* What is the average spending behavior of customers?
-
----
-
-## 🛠️ Tools & Concepts Used
-
-* SQL Server
-* Joins (Fact & Dimension tables)
-* CTEs (Common Table Expressions)
-* Aggregations (`SUM`, `COUNT`, `MAX`, `MIN`)
-* Window Functions
-* Conditional Logic (`CASE WHEN`)
-* Date Functions (`DATEDIFF`, `GETDATE`)
-
----
-
-## 📊 Key Features
-
-### 🔹 Customer Data Consolidation
-
-* Combined transactional and customer data into a single dataset
-* Extracted key fields like name, age, and order details
 ---
 
 ## 📊 Data Model
 
-This diagram shows the data model used for the analysis, 
-where a central fact table (sales) is connected to customer and product dimension tables.
+This diagram shows the data model used for the analysis, where a central fact table (sales) is connected to customer and product dimension tables.
 
 ![Data Model](data_model.png)
 
+---
 
-### 🔹 Customer Segmentation
+## 📌 Project Components
 
-Customers are classified into:
+### 🔹 1. Customer Report
+A customer-level analytics report designed to understand customer behavior and value.
 
-* **VIP** → Customers with ≥12 months history and sales > 5000
-* **Regular** → Customers with ≥12 months history and sales ≤ 5000
-* **New** → Customers with <12 months history
+**Key Features:**
+- Customer Segmentation → VIP, Regular, New  
+- Age Group Classification  
+- Metrics → Total Orders, Sales, Quantity, Products  
+- Recency Analysis (months since last purchase)  
+- KPIs → Average Order Value, Monthly Spend  
 
 ---
 
-### 🔹 Age Group Classification
+### 🔹 2. Product Report
+A product-level analytics report focused on performance and revenue patterns.
 
-Customers are grouped into:
-
-* Under 20
-* 20–29
-* 30–39
-* 40–49
-* 50 and above
-
----
-
-### 🔹 Customer-Level Metrics
-
-For each customer, the following metrics are calculated:
-
-* Total Orders
-* Total Sales
-* Total Quantity Purchased
-* Total Products Purchased
-* Customer Lifespan (in months)
-* Last Order Date
+**Key Features:**
+- Product Segmentation → High Performer, Mid Range, Low Performer  
+- Metrics → Total Orders, Sales, Quantity, Unique Customers  
+- Product Lifespan Analysis  
+- Recency (months since last sale)  
+- KPIs → Average Selling Price, Order Revenue, Monthly Revenue  
 
 ---
 
-### 🔹 Key Performance Indicators (KPIs)
-
-* **Recency** → Months since last purchase
-* **Average Order Value (AOV)** → Sales per order
-* **Average Monthly Spend** → Sales per month
-
----
-
-## 🧠 Key Learnings
-
-* Built multi-step queries using **CTEs for better readability**
-* Applied **business logic using CASE statements**
-* Handled **edge cases** like division by zero
-* Used **date functions** to calculate recency and lifespan
-* Transformed raw data into a **business-ready analytical dataset**
+## 🛠️ Tools & Concepts Used
+- SQL Server  
+- Joins (Fact & Dimension tables)  
+- CTEs (Common Table Expressions)  
+- Aggregations (SUM, COUNT, AVG)  
+- Window Functions  
+- CASE statements for business logic  
+- Date functions (DATEDIFF, GETDATE)  
 
 ---
 
-## 📂 Output
-
-The final output is created as a SQL view:
-
-```sql
-gold.report_customers
-```
-
-This view can be directly used for:
-
-* Dashboarding (Power BI / Tableau)
-* Customer segmentation analysis
-* Business decision-making
+## 🎯 Business Problems Solved
+- Identifying high-value customers and their behavior  
+- Segmenting customers based on activity and spending  
+- Evaluating product performance across categories  
+- Detecting low-performing products  
+- Understanding revenue patterns over time  
 
 ---
 
-## 🚀 Business Impact
-
-This report helps businesses:
-
-* Identify high-value (VIP) customers
-* Understand customer purchasing behavior
-* Detect inactive customers (high recency)
-* Improve targeting and retention strategies
-
----
-
-## 📌 Conclusion
-
-This project demonstrates how SQL can be used not just for querying data, but for building **end-to-end analytical solutions** that provide actionable business insights.
-
-
-That will make this look like a **proper portfolio project**, not just SQL practice.
-
+## 🚀 Conclusion
+This project demonstrates how SQL can be used to go beyond data extraction and build structured analytical solutions that uncover patterns, support segmentation, and drive business insights.
